@@ -1,6 +1,12 @@
-Software Requirements Specification (SRS) for Shell Script Syntax Checker ( NOVA-ASK [acronyms of our names] ) 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+             Software Requirements Specification (SRS) for Shell Script Syntax Checker ( NOVA-ASK [acronyms of our names] ) 
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. Introduction
+_____________________
+
 1.1 Purpose
 The purpose of this SRS is to specify the requirements for the development of a Shell Script Syntax Checker, referred to as NOVA-ASK. The tool will be developed to help users check the syntax of shell scripts and identify any errors in the script.
 
@@ -13,7 +19,12 @@ The main objectives of NOVA-ASK are to:
 - Provide feedback to the user indicating any errors that occur in the script.
 - Ensure that the tool is user-friendly and easy to use.
 
+
+
 2. Functional Requirements
+__________________________________
+
+
 2.1 User Upload
 The user should be able to upload their shell script for syntax checking.
 
@@ -30,7 +41,12 @@ The tool should provide feedback to the user indicating where the error(s) occur
 2.4 Script Length Handling
 The tool should be able to handle scripts of any length.
 
+
+
 3. Non-Functional Requirements
+_______________________________________
+
+
 3.1 User Interface
 The tool should have a user-friendly interface.
 
@@ -43,7 +59,12 @@ The tool should be able to handle scripts written in different versions of shell
 3.4 Feedback Timeliness
 The tool should be able to provide feedback to the user in a timely manner.
 
+
+
 4. User Requirements
+____________________________
+
+
 4.1 Upload
 The user should be able to upload their shell script for syntax checking.
 
@@ -59,3 +80,5 @@ The tool should be able to identify all syntax errors in the shell script.
 
 5.2 Feedback Accuracy and Clarity
 The feedback provided by the tool should be accurate and easy to understand.
+
+*******************************************************************************************************************************************************
