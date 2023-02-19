@@ -29,11 +29,9 @@ fi
 
 #checks
 # ./check_for_loop.sh
-./for.sh
 # ./check_if_conditional.sh
 # ./check_while_loop.sh
-# ./while.sh
 # ./check_case_conditional.sh
 # echo $FILE
 # ./check_quotes.sh
-# ./check_paranthesis.sh
+./check_paranthesis.sh

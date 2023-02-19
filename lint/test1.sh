@@ -10,17 +10,18 @@ for((j=1;j<=n;j++));do
         # echo -e -n "\\e[47m "
         echo " "
     fi
-    echo ""
+    echo
 done
 
 
-while [ true ];do
+while [ true ] ;do
     # body
     echo 'text here'
     exit 0
     
+    
 done
-case "${item}" i
+case "${item}" in
     1)
         echo "item = 1"
     ;;

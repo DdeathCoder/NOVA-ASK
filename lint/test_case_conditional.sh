@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 item=2
-case "${item}" in
+case "${item}" 
     1 )echo "item = 1"
     ;;
     2|3)
