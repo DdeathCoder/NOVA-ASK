@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 # echo "hi"
-FIL=$FILE
-FIL=$( echo "$FIL" | tr -d '\0')
-
-echo  "$FIL"
-StringFor=$( echo "$FIL" | grep -Pvz "^((?:[^()]+|\((?1)?\))*)$" )
-StringFor=$( cat "out.txt")
+stringg=$FILE
+StringFor=$(echo "$stringg"| grep -Pvz "^((?:[^()]+|\((?1)?\))*)$")
 
 
 if [ -n "$StringFor" ]; then
@@ -16,3 +12,12 @@ if [ -n "$StringFor" ]; then
 else
     echo "Error in paranthesis"
 fi
+
+
+# 
+
+
+
+
+
+

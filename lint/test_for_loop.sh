@@ -1,9 +1,9 @@
 #!/bin/bash
-for((i=0;i<n;i++)); do
+# for((i=0;i<n;i++); do
     
-        echo "${i}, ${j}"
+#         echo "${i}, ${j}"
     
-done
+# done
 
 while [ true ]; do
     # body
