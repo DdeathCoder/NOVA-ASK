@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 i=1
 # Loop through columns
-for((j=1;j<=n;j++);do
+for((j=1;j<=n;j++));do
     
     if [ $(((i+j)%2)) -eq 0 ] then
         # echo -e -n "\\e[40m "
@@ -14,14 +14,13 @@ for((j=1;j<=n;j++);do
 done
 
 
-while [ true ] ;do
+while [ true ];do
     # body
     echo 'text here'
     exit 0
     
-    
 done
-case "${item}" in
+case "${item}" i
     1)
         echo "item = 1"
     ;;

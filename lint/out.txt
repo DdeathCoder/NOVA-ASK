@@ -1,0 +1,11 @@
+for((j=1;j<=n;j++));do
+    
+    if [ $(((i+j)%2)) -eq 0 ] then
+        # echo -e -n "\\e[40m "
+        echo " "
+    else
+        # echo -e -n "\\e[47m "
+        echo " "
+    fi
+    echo ""
+done
