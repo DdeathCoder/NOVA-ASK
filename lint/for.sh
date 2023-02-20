@@ -10,7 +10,7 @@ if [ -n "$StringFor" ]; then
     StringForChecked=$( echo "$StringFor" | grep -Poz "\bfor\s*(\(\()+.+(\)\));?\s*\bdo\b\s+(.|\s)+\b(done)\b" | tr -d '\0' >out.txt)
     # echo "a = $StringFor"
     # echo "$FIL"
-    StringFor=$(cat out.txt)
+    StringForChecked=$(cat out.txt)
 
     echo ""
     if [ -z "$StringForChecked" ]; then

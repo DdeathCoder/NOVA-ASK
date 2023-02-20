@@ -31,4 +31,12 @@ case "${item}" in
         echo "default (none of above)"
     ;;
 esac   
+for((i=0;i<n;i++)); do
+    echo "${i}"
+done
+
+if [[ true; then
+    echo hi
+fi
+
 

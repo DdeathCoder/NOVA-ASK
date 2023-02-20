@@ -39,3 +39,5 @@ fi
 # ./check_quotes.sh
 # ./check_paranthesis.sh
 # ./p.sh
+# ./forv2.sh
+./ifv2.sh

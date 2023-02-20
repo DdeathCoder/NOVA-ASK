@@ -1,3 +1,10 @@
-
-
-vsr=$((12+17)
+if [ $(((i+j)%2)) -eq 0 ];then
+        # echo -e -n "\\e[40m "
+        echo " "
+    else
+        # echo -e -n "\\e[47m "
+        echo " "
+    fi
+if [[ true; then
+    echo hi
+fi
