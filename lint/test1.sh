@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 i=1
 # Loop through columns
-for((j=1;j<=n;j++);do
+for((j=1;j<=n;j++));do
     
-    if [ $(((i+j)%2)) -eq 0 ] then
+    if [ $(((i+j)%2)) -eq 0 ];then
         # echo -e -n "\\e[40m "
         echo " "
     else
@@ -14,11 +14,10 @@ for((j=1;j<=n;j++);do
 done
 
 
-while [ true ] ;do
+while [ true ];do
     # body
     echo 'text here'
     exit 0
-    
     
 done
 case "${item}" in
@@ -32,4 +31,12 @@ case "${item}" in
         echo "default (none of above)"
     ;;
 esac   
+for((i=0;i<n;i++)); do
+    echo "${i}"
+done
+
+if [[ true; then
+    echo hi
+fi
+
 

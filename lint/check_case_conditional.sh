@@ -1,17 +1,21 @@
 #!/bin/bash
-FIL=$(cat $FILE | tr -d '\0')
-StringFor=$(echo "$FIL" | grep -Poz "\bcase\b(\s*|.+)+\besac\b" | tr -d '\0' >out.txt)
-# echo "a = $StringFor"
-# echo "$FIL"
-StringFor=$(cat out.txt)
+FIL=$FILE
+FIL=$( echo "$FIL" | tr -d '\0')
+
+StringFor=$( echo "$FIL" | grep -Poz "\bcase\b(?:\s+|.+)+?\besac\b" | tr -d '\0' > out.txt) 
+# StringFor=$(echo "$FIL" | grep -Poz "\bcase\b(\s*|.+)+\besac\b")
+StringFor=$(cat "out.txt")
+
+
 if [ -n "$StringFor" ]; then
  
   
-    StringForChecked=$(echo "$StringFor" | grep -Pozq "(\bcase\b\s+.+\bin\b(\s*|.+))+([a-zA-Z0-9|*]+\s*\)(.+|\s*)+?(;;))+\s+\b(esac)\b") 
-
-    
+    StringForChecked=$( echo "$StringFor" | grep -Poz "(\bcase\b\s+.+?\bin\b(?:\s*|.+)?(?:[a-zA-Z0-9*]+\s*\)(?:.+|\s*)+?(?:;;))+\s+\besac\b" | tr -d '\0' > out.txt) 
+    StringForChecked=$(cat "out.txt")
     if [ -z "$StringForChecked" ]; then
          
+        # echo 'error here '
+        
         echo "There is error in : "
         echo "$StringFor"
         echo ""
